@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ce9ceda-cb83-431a-b17c-2b84fda8e5cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/in/ineuron/atm/AccountHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/in/ineuron/atm/AccountHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/in/ineuron/atm/Atm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/in/ineuron/atm/Atm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/in/ineuron/atm/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/in/ineuron/atm/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/in/ineuron/atm/InvalidCustomerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/in/ineuron/atm/InvalidCustomerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/in/ineuron/main/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/in/ineuron/main/MainApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ce9ceda-cb83-431a-b17c-2b84fda8e5cc" name="Changes" comment="changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +34,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -72,6 +70,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680501264056</updated>
     </task>
+    <task id="LOCAL-00001" summary="changes">
+      <created>1680503498827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680503498827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +92,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>

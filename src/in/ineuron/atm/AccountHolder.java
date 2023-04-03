@@ -11,7 +11,7 @@ public class AccountHolder {
 
 }
 class BankAccount{
-    int balance=1000;
+    int balance=5000;
     int TransactionHistory;
 
 
