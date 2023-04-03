@@ -5,7 +5,7 @@ import in.ineuron.atm.Bank;
 
 public class MainApp {
     public static void main(String[] args) {
-        String bank = "**************** WELCOME TO INEURON BANK*****************";
+        String bank = "**************** WELCOME TO INEURON ATM*****************";
         try
         {
             for(int i=0;i<bank.length();i++)
