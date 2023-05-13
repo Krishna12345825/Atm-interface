@@ -1,0 +1,108 @@
+                               low-Level Documentation
+
+
+
+       Introduction
+       
+       The ATM Interface Project aims to create a simple ATM application using Core Java and JDBC. This project allows users to perform basic 
+       ATM operations such as withdrawing cash, depositing cash, checking the account balance, and transferring funds between accounts.
+
+      
+       System Requirements
+        To run the ATM Interface Project, you need the following software and hardware components:
+
+       1. java Development Kit (JDK) version 8 or above.
+       2. A relational database management system (RDBMS) such as MySQL, Oracle, or PostgreSQL.
+       3. JDBC driver compatible with your RDBMS.
+       4. An IDE (Integrated Development Environment) such as Eclipse, IntelliJ IDEA, or NetBeans.
+       5. A computer system with sufficient resources to run the project smoothly.
+
+
+
+      System Architecture
+      The ATM Interface Project follows a client-server architecture. The client-side application is built using Core Java, and the server-side 
+      the application interacts with the database using JDBC.
+     
+       The components of the system architecture are as follows:
+
+        1. Client-side:
+
+            - User Interface (UI): Provides a graphical interface for users to interact with the ATM application.
+            - Core Java Application: Handles user input, communicates with the server side, and displays results to the user.
+        2. Server-side:
+
+           - Database: Stores user account information, transaction history, and other relevant data.
+           - JDBC: Establishes a connection with the database and performs CRUD (Create, Read, Update, Delete) operations.
+           - Business Logic: Contains the logic for processing user requests, validating transactions, and updating the database.
+
+
+
+      Class Diagram
+        The class diagram represents the structure and relationships between the main classes in the ATM Interface Project.
+          
+
+                             
++-------------------------------------------------------+
+|                       ATMClient                        |
++-------------------------------------------------------+
+| - main(args: String[]): void                           |
+| - showMenu(): void                                     |
+| - handleMenuChoice(choice: int): void                  |
+| - withdrawCash(): void                                 |
+| - depositCash(): void                                  |
+| - checkBalance(): void                                 |
+| - transferFunds(): void                                |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                      AccountDAO                        |
++-------------------------------------------------------+
+| - connection: Connection                               |
+| + getConnection(): Connection                          |
+| + releaseConnection(): void                            |
+| + createAccount(account: Account): void                |
+| + updateAccount(account: Account): void                |
+| + getAccount(accountNumber: String): Account           |
+| + getAllAccounts(): List<Account>                      |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                        Account                         |
++-------------------------------------------------------+
+| - accountNumber: String                                |
+| - pin: String                                         |
+| - balance: double                                     |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                        Transaction                    |
++-------------------------------------------------------+
+| - transactionId: String                               |
+| - accountNumber: String                               |
+| - type: TransactionType                               |
+| - amount: double                                      |
+| - timestamp: Date                                     |
++-------------------------------------------------------+
+
+
+
+      Database Schema
+   The database schema for the ATM Interface Project consists of two tables: accounts and transactions.
+
+1. accounts table:
+
+Columns:
+accountNumber (Primary Key): VARCHAR(20)
+pin: VARCHAR(4)
+balance: DECIMAL(10,2)
+
+
+2. transactions table:
+
+Columns:
+transactionId (Primary Key): VARCHAR(20)
+accountNumber (Foreign Key): VARCHAR(20)
+type: VARCHAR(10)
+
+
+
